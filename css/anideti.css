@@ -17,7 +17,7 @@ body {
 }
 
 .whiteonblack {
-color: #ffffff;
+    color: #ffffff;
 }
 
 .text-vertical-center {
@@ -45,9 +45,6 @@ color: #ffffff;
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-} {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
@@ -344,7 +341,7 @@ hr.small {
             background: #CC181E;
         }
 
-
+/*
         @media (max-width: 624px) {
             body {
                 margin: 15px;
@@ -356,7 +353,6 @@ hr.small {
                 padding-bottom: 20px;
             }
 
-            /* reposition left/right arrows */
             .arrows {
                 position:relative;
                 margin: 0 auto;
@@ -371,8 +367,9 @@ hr.small {
                 right: 0;
                 top: -17px;
             }
+          
         }
-
+  */
 
 
 /* Footer */
