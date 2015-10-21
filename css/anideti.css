@@ -47,11 +47,6 @@ body {
 
 /* Custom Button Styles */
 
-.btn-light {
-    border-radius: 0;
-    color: #ffffff;
-    background-color: #f0f0f0;
-}
 
 .btn-dark,
 .btn-dark:hover,
