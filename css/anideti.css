@@ -25,6 +25,7 @@ body {
 
 body {
     font-family: 'Source Sans Pro';
+    font-size: 1.6em;
 }
 
 .whiteonblack {
@@ -237,19 +238,22 @@ hr.small {
 }
 
 /* Map */
-
-.map {
-    height: 500px;
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
 }
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
 }
