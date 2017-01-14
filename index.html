@@ -38,27 +38,27 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg whiteonblack toggle"><i class="fa fa-bars"></i></a>
+    <a href="#" onclick="toggleMenu(event)" class="btn btn-dark btn-lg whiteonblack toggle menu-toggle"><span class="menu-text">MENU</span><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a href="#" onclick="toggleMenu(event)" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$ ( "#menu-close").click();>Úvod</a>
+                <a href="#top" onclick="scrollAndClose(event, '#top')">Úvod</a>
 </li>
 <li>
-    <a href="#events" onclick=$ ( "#menu-close").click();>Aktuality</a>
+    <a href="#events" onclick="scrollAndClose(event, '#events')">Aktuality</a>
 </li>
 <li>
-    <a href="#photos" onclick=$ ( "#menu-close").click();>Fotogalerie</a>
+    <a href="#photos" onclick="scrollAndClose(event, '#photos')">Fotogalerie</a>
 </li>
 <li>
-    <a href="#portfolio" onclick=$ ( "#menu-close").click();>Filmy</a>
+    <a href="#portfolio" onclick="scrollAndClose(event, '#portfolio')">Filmy</a>
 </li>
 <li>
-    <a href="#services" onclick=$ ( "#menu-close").click();>Nabíka kurzů a táborů</a>
+    <a href="#services" onclick="scrollAndClose(event, '#services')">Nabíka kurzů a táborů</a>
 </li>
 <li>
-    <a href="#contact" onclick=$ ( "#menu-close").click();>Kontakt</a>
+    <a href="#contact" onclick="scrollAndClose(event, '#contact')">Kontakt</a>
 </li>
 </ul>
 </nav>
@@ -67,9 +67,9 @@
 <header id="top" class="header">
     <div class="text-vertical-center">
         <h1 class="whiteonblack">Aniděti</h1>
-        <h3 class="whiteonblack">Škola animovaného filmu</h3>
+        <h3 class="whiteonblack">Škola animovaného filmu v Praze 6</h3>
         <br>
-        <a href="#events" class="btn btn-light btn-lg">Zjistit více</a>
+        <a href="#events" onclick="scrollTo(event, '#events')" class="btn btn-dark btn-lg">ZJISTIT VÍCE <i class="fa fa-chevron-right"></i></a>
     </div>
 </header>
 
@@ -102,6 +102,7 @@
             </div>
 
         </div>
+        <hr class="camera">
     </div>
     <!-- /.container -->
 </section>
@@ -119,7 +120,6 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h2>Fotogalerie</h2>
-                <hr class="small">
 
                 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -211,7 +211,7 @@
                 </div>
             </div>
         </div>
-
+        <hr class="camera">
     </div>
     <!-- /.container -->
 </section>
@@ -223,7 +223,6 @@
 
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h2>Filmy</h2>
-                <hr class="small">
                 <div class="row">
                     <div class="portfolio-item">
                         <div class="embed-responsive embed-responsive-4by3">
@@ -232,11 +231,12 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" class="btn btn-md btn-dark">Všechny filmy <i class="fa fa-youtube"></i></a>
+                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" class="btn btn-md">Všechny filmy <i class="fa fa-youtube"></i></a>
             </div>
             <!-- /.col-lg-10 -->
         </div>
         <!-- /.row -->
+    <hr class="camera">
     </div>
     <!-- /.container -->
 </section>
@@ -273,11 +273,11 @@
                                     zažijí slavnostní premiéru svých filmů.</p>
                                 <p>
                                     <div class="list-group">
-                                        <div class="list-group-item list-group-item-warning">
+                                        <div class="list-group-item">
                                             <h4 class="list-group-item-heading">Místo</h4>
                                             <p class="list-group-item-text">Praha 6 - Hanspaulka</p>
                                         </div>
-                                        <div class="list-group-item list-group-item-warning">
+                                        <div class="list-group-item">
                                             <h4 class="list-group-item-heading">Cena za pololetí</h4>
                                             <p class="list-group-item-text">2 000,- Kč</p>
                                         </div>
@@ -304,11 +304,11 @@
                             obrazový scénář a začnnou snímat rozpohybované předměty. Nakonec nasadíme zvuk a titulky.
                             <p>
                                 <div class="list-group">
-                                    <div class="list-group-item list-group-item-warning">
+                                    <div class="list-group-item">
                                         <h4 class="list-group-item-heading">Čas</h4>
                                         <p class="list-group-item-text">Celé školní dopoledne (od 8.00 do 12.30)</p>
                                     </div>
-                                    <div class="list-group-item list-group-item-warning">
+                                    <div class="list-group-item">
                                         <h4 class="list-group-item-heading">Cena</h4>
                                         <p class="list-group-item-text">3000,- Kč</p>
                                     </div>
@@ -339,11 +339,11 @@
                                 pro rodiče a přátele v místním kině.
                                 <p>
                                     <div class="list-group">
-                                        <div class="list-group-item list-group-item-warning">
+                                        <div class="list-group-item">
                                             <h4 class="list-group-item-heading">Dětský příměstský tábor</h4>
                                             <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
                                         </div>
-                                        <div class="list-group-item list-group-item-warning">
+                                        <div class="list-group-item">
                                             <h4 class="list-group-item-heading">Dětský tábor s přespáním</h4>
                                             <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
                                         </div>
@@ -375,7 +375,7 @@
                                 nevyžadujeme ani nepředpokládáme.</p>
                             <p>
                                 <div class="list-group">
-                                    <div class="list-group-item list-group-item-warning">
+                                    <div class="list-group-item">
                                         <h4 class="list-group-item-heading">Týden pro rodiny s dětmi</h4>
                                         <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
                                     </div>
@@ -391,6 +391,7 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
+        <hr class="camera">
 </section>
 
 
@@ -401,7 +402,6 @@
 
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h2>Kontakt</h2>
-                <hr class="small">
                 <div class="row">
                     <div class="portfolio-item">
                         <h4><strong>Aniděti</strong></h4>
@@ -415,7 +415,9 @@
                 </div>
             </div>
         </div>
+        <hr class="camera">
     </div>
+ 
 </section>
 
 
@@ -424,8 +426,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <hr class="small">
-                <p class="text-muted">Copyright &copy; Aniděti 2015</p>
+                <p class="text-muted">Copyright &copy; Aniděti 2017</p>
             </div>
         </div>
     </div>
@@ -433,7 +434,7 @@
 
 
 <!-- jQuery -->
-<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -654,17 +655,23 @@
                                // execute above function
                                initPhotoSwipeFromDOM('.my-gallery');
 
-                               // Closes the sidebar menu
-                               $("#menu-close").click(function (e) {
-                                   e.preventDefault();
-                                   $("#sidebar-wrapper").toggleClass("active");
-                               });
+                               function scrollTo(event, selector) {
+                                    event.preventDefault();
+                                    $('html, body').animate({
+                                        scrollTop: $(selector).offset().top
+                                    }, 1500);
+                               }
 
-                               // Opens the sidebar menu
-                               $("#menu-toggle").click(function (e) {
-                                   e.preventDefault();
-                                   $("#sidebar-wrapper").toggleClass("active");
-                               });
+                               function toggleMenu(event) {
+                                    event.preventDefault();
+                                    $("#sidebar-wrapper").toggleClass("active");
+                               }
+
+                               function scrollAndClose(event, selector) {
+                                   scrollTo(event, selector);
+                                   toggleMenu(event);
+                               }
+
 </script>
 </body>
 
