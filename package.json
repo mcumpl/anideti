@@ -1,0 +1,25 @@
+{
+  "name": "anideti",
+  "version": "1.0.0",
+  "description": "Anideti website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcumpl/anideti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcumpl/anideti/issues"
+  },
+  "homepage": "https://github.com/mcumpl/anideti#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "photoswipe": "^4.1.1"
+  }
+}

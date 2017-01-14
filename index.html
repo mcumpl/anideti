@@ -6,19 +6,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Škola animovaného filmu v Praze 6">
+    <meta name="author" content="Kateřina Knappová">
 
     <title>Aniděti - škola animovaného filmu</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Photoswipe CSS -->
+    <link href="./node_modules/photoswipe/dist/photoswipe.css" rel="stylesheet">
+
+    <!-- Photoswipe skin CSS -->
+    <link href="./node_modules/photoswipe/dist/default-skin/default-skin.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/anideti.css?v=3" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,317 +43,629 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$ ( "#menu-close").click();>Aniděti</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$ ( "#menu-close").click();>O nás</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Filmy</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$ ( "#menu-close").click();>Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Úvod</a>
+</li>
+<li>
+    <a href="#events" onclick=$ ( "#menu-close").click();>Aktuality</a>
+</li>
+<li>
+    <a href="#photos" onclick=$ ( "#menu-close").click();>Fotogalerie</a>
+</li>
+<li>
+    <a href="#portfolio" onclick=$ ( "#menu-close").click();>Filmy</a>
+</li>
+<li>
+    <a href="#services" onclick=$ ( "#menu-close").click();>Nabíka kurzů a táborů</a>
+</li>
+<li>
+    <a href="#contact" onclick=$ ( "#menu-close").click();>Kontakt</a>
+</li>
+</ul>
+</nav>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1 class="whiteonblack">Aniděti</h1>
-            <h3 class="whiteonblack">Škola animovaného filmu</h3>
-            <br>
-            <a href="#about" class="btn btn-light btn-lg">Zjistit více</a>
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1 class="whiteonblack">Aniděti</h1>
+        <h3 class="whiteonblack">Škola animovaného filmu</h3>
+        <br>
+        <a href="#events" class="btn btn-light btn-lg">Aktuality</a>
+    </div>
+</header>
+
+<section id="events" class="services bg-warning">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Aktuality</h2>
         </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p class="lead">Léta jsem pracovala jako scénáristka a režisérka. Narodily se mi děti a ponořila jsem se do světa dětské
-                        fantazie. Baví mě si s dětmi malovat, animovat a hrát si...</p>
-                    <p>&mdash;Kateřina Knappová</p>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="./events/atelier.jpg" alt="Máme nový atelier">
+                    <div class="caption">
+                        <h3>Aniděti mají nový ateliér!</h3>
+                        <p>4. října 2016 jsme s Anidětmi slavnostně otevřeli náš nový ateliér, ve kterém se budeme moci konečně
+                            pořádně rozmáchnout. Těšte se na naše nové filmy.</p>
+                    </div>
                 </div>
             </div>
-            <!-- /.row -->
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="./events/merboltice.jpg" alt="Merboltický festival Krátký film v dlouhé vesnici">
+                    <div class="caption">
+                        <h3>Aniděti na festivalu Krátký film v dlouhé vesnici</h3>
+                        <p>10. září 2016 se promítal náš film Odysseova dobrodružství na moři i na souši na festivalu Krátký
+                            film v dlouhé vesnici v Merbolticích. Pro veliký úspěch jsem pozváni i přístí rok.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <!-- /.container -->
-    </section>
+    </div>
+    <!-- /.container -->
+</section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-warning">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row">
+<!-- Callout 
+<aside class="callout">
+    <div class="text-vertical-center">
+        <h1>Aniděti - aninuda!</h1>
+    </div>
+</aside>
+-->
 
-                        <div class="col-md-3 col-sm-12">
-                            <div class="service-item">
-                                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" target="_blank">
-                                    <span class="fa-stack fa-4x">
+<section id="photos" class="photos bg-warning">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Fotogalerie</h2>
+                <hr class="small">
+
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./photos/1.JPG" itemprop="contentUrl" data-size="2000x1500">
+                            <img src="./photos/1t.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 2.1</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./photos/2.JPG" itemprop="contentUrl" data-size="1500x2000">
+                            <img src="./photos/2t.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 2.2</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./photos/3.JPG" itemprop="contentUrl" data-size="2000x1500">
+                            <img src="./photos/3t.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 2.3</figcaption>
+                    </figure>
+
+
+                </div>
+
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+
+                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+
+                            <div class="pswp__top-bar">
+
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                <div class="pswp__counter"></div>
+
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio bg-warning">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Filmy</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="portfolio-item">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" class="btn btn-md btn-dark">Všechny filmy <i class="fa fa-youtube"></i></a>
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-warning">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Nabíka kurzů a táborů</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="service-item">
+                            <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" target="_blank">
+                                <span class="fa-stack fa-4x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-play  fa-stack-1x whiteonblack"></i>
                                     </span>
-                                </a>
-                                <h4>
-                                    <strong>Kurzy animovaného filmu</strong>
-                                </h4>
-                                <div class="text-center">
-                                    <p>Náš pravidelný Kurz animovaného filmu je určen pro děti prvního stupně ZŠ. Dítě se seznámí
-                                        se základními technikami animovaného filmu jako je kreslená a loutková animace, animace
-                                        různých materiálů, pixilace a dozví se jak vznikají různé typy večerníčků.</p>
-                                    <p>Děti pracují ve skupinkách a spolupracují se svými kamarády. Hotové filmy veřejně promítáme
-                                        jednou až dvakrát ročně v kině Ponrepo, kde děti společně se svými rodinami a přáteli
-                                        zažijí slavnostní premiéru svých filmů.</p>
-                                    <p>
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-warning">
-                                                <h4 class="list-group-item-heading">Místo</h4>
-                                                <p class="list-group-item-text">Praha 6 - Hanspaulka</p>
-                                            </div>
-                                            <div class="list-group-item list-group-item-warning">
-                                                <h4 class="list-group-item-heading">Cena za pololetí</h4>
-                                                <p class="list-group-item-text">2 000,- Kč</p>
-                                            </div>
-                                        </div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <div class="service-item">
-                                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bT1wJulsljuy9701pKYJBHG" target="_blank">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-film fa-stack-1x whiteonblack"></i>
-                                    </span>
-                                </a>
-                                <h4>
-                                    <strong>Program pro děti prvního i druhého stupně ZŠ</strong>
-                                </h4>
-                                Děti se velmi stručně dozví, jak vzniká animovaný film - od scénáře ke kameře, zvukové efekty, jak funguje oko a co je optický
-                                klam. Následně se rozdělí do skupin, v rámci nichž si vyberou jednotlivé profese: scénárista,
-                                režisér, výtvarník/animátor, kameraman, zvukový mistr. Dětí si vyberou krátký příběh, vytvoří
-                                obrazový scénář a začnnou snímat rozpohybované předměty. Nakonec nasadíme zvuk a titulky.
+                            </a>
+                            <h4>
+                                <strong>Kurzy animovaného filmu</strong>
+                            </h4>
+                            <div class="text-center">
+                                <p>Náš pravidelný Kurz animovaného filmu je určen pro děti prvního stupně ZŠ. Dítě se seznámí
+                                    se základními technikami animovaného filmu jako je kreslená a loutková animace, animace
+                                    různých materiálů, pixilace a dozví se jak vznikají různé typy večerníčků.</p>
+                                <p>Děti pracují ve skupinkách a spolupracují se svými kamarády. Hotové filmy veřejně promítáme
+                                    jednou až dvakrát ročně v kině Ponrepo, kde děti společně se svými rodinami a přáteli
+                                    zažijí slavnostní premiéru svých filmů.</p>
                                 <p>
                                     <div class="list-group">
                                         <div class="list-group-item list-group-item-warning">
-                                            <h4 class="list-group-item-heading">Čas</h4>
-                                            <p class="list-group-item-text">Celé školní dopoledne (od 8.00 do 12.30)</p>
+                                            <h4 class="list-group-item-heading">Místo</h4>
+                                            <p class="list-group-item-text">Praha 6 - Hanspaulka</p>
                                         </div>
                                         <div class="list-group-item list-group-item-warning">
-                                            <h4 class="list-group-item-heading">Cena</h4>
-                                            <p class="list-group-item-text">3000,- Kč</p>
+                                            <h4 class="list-group-item-heading">Cena za pololetí</h4>
+                                            <p class="list-group-item-text">2 000,- Kč</p>
                                         </div>
                                     </div>
                                 </p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-3 col-sm-12">
-                            <div class="service-item">
-                                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bS84ztE54seuZz9EPDoWyGD" target="_blank">
-                                    <span class="fa-stack fa-4x">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="service-item">
+                            <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bT1wJulsljuy9701pKYJBHG" target="_blank">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-film fa-stack-1x whiteonblack"></i>
+                                    </span>
+                            </a>
+                            <h4>
+                                <strong>Program pro děti prvního i druhého stupně ZŠ</strong>
+                            </h4>
+                            Děti se velmi stručně dozví, jak vzniká animovaný film - od scénáře ke kameře, zvukové efekty, jak funguje oko a co je optický
+                            klam. Následně se rozdělí do skupin, v rámci nichž si vyberou jednotlivé profese: scénárista,
+                            režisér, výtvarník/animátor, kameraman, zvukový mistr. Dětí si vyberou krátký příběh, vytvoří
+                            obrazový scénář a začnnou snímat rozpohybované předměty. Nakonec nasadíme zvuk a titulky.
+                            <p>
+                                <div class="list-group">
+                                    <div class="list-group-item list-group-item-warning">
+                                        <h4 class="list-group-item-heading">Čas</h4>
+                                        <p class="list-group-item-text">Celé školní dopoledne (od 8.00 do 12.30)</p>
+                                    </div>
+                                    <div class="list-group-item list-group-item-warning">
+                                        <h4 class="list-group-item-heading">Cena</h4>
+                                        <p class="list-group-item-text">3000,- Kč</p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="service-item">
+                            <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bS84ztE54seuZz9EPDoWyGD" target="_blank">
+                                <span class="fa-stack fa-4x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-forward fa-stack-1x whiteonblack"></i>
                                     </span>
-                                </a>
-                                <h4>
-                                    <strong>Letní tábory animovaného filmu</strong>
-                                </h4>
-                                <p>Tábory jsou vhodné pro děti 1.stupně ZŠ (mladší po domluvě) a konají se převážně v exteriéru.
-                                    Ateliér je zařízen v jurtě na soukromé zahradě v Krásné Lípě.</p>
+                            </a>
+                            <h4>
+                                <strong>Letní tábory animovaného filmu</strong>
+                            </h4>
+                            <p>Tábory jsou vhodné pro děti 1.stupně ZŠ (mladší po domluvě) a konají se převážně v exteriéru.
+                                Ateliér je zařízen v jurtě na soukromé zahradě v Krásné Lípě.</p>
 
-                                <p>Děti se seznámí se základními technikami animovaného filmu: Animace různých materiálů, kreslená
-                                    a loutková animace, pixilace. Za pomoci lektora namalují sérii obrázků, nebo vlastnoručně
-                                    vyrobí jednoduchou loutku, postaví jednoduché kulisy v přírodním zákoutí. V dalších hodinách
-                                    kurzu nafotí sérii fotek a na počítači řazením fotografií svůj příběh rozpohybují, namluví,
-                                    nasadí hudbu, vyrobí vlastní titulky. Poslední den tábora pak pořádáme „slavnostní projekci“
-                                    pro rodiče a přátele v místním kině.
-                                    <p>
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-warning">
-                                                <h4 class="list-group-item-heading">Dětský příměstský tábor</h4>
-                                                <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
-                                            </div>
-                                            <div class="list-group-item list-group-item-warning">
-                                                <h4 class="list-group-item-heading">Dětský tábor s přespáním</h4>
-                                                <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
-                                            </div>
-                                        </div>
-                                    </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <div class="service-item">
-                                <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQS6UkvM_K_SVJiFSDkTrS0" target="_blank">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-video-camera fa-stack-1x whiteonblack"></i>
-                                    </span>
-                                </a>
-                                <h4>
-                                    <strong>Týden pro rodiny s dětmi na téma DOBRODRUŽSTVÍ ANIMACE</strong>
-                                </h4>
-                                <p>Srdečně Vás zveme na setkání rodin v krásném prostředí Jizerských hor. Vítány jsou rodiny,
-                                    které mají zájem prožít víkend plný zážitků, objevit kouzlo animace a vytvořit si se
-                                    svými dětmi svůj animovaný film.</p>
-                                <p>Pokusíme se Vás provést světem animovaného filmu tak, abyste si odvezli domů nejen autorské
-                                    dílo, ale hlavně jakési know-how, jak si takový film udělat kdekoli, kdykoli, s kýmkoli
-                                    – hlavně se svými dětmi! Rádi bychom Vás inspirovali, jak si se svými dětmi malovat,
-                                    animovat a hrát si!
-                                </p>
-                                <p>Výhodou je mít svůj foťák a stativ, ale není to podmínkou. Předchozí výtvarné nebo filmové
-                                    zkušenosti nevyžadujeme ani nepředpokládáme.</p>
+                            <p>Děti se seznámí se základními technikami animovaného filmu: Animace různých materiálů, kreslená
+                                a loutková animace, pixilace. Za pomoci lektora namalují sérii obrázků, nebo vlastnoručně
+                                vyrobí jednoduchou loutku, postaví jednoduché kulisy v přírodním zákoutí. V dalších hodinách
+                                kurzu nafotí sérii fotek a na počítači řazením fotografií svůj příběh rozpohybují, namluví,
+                                nasadí hudbu, vyrobí vlastní titulky. Poslední den tábora pak pořádáme „slavnostní projekci“
+                                pro rodiče a přátele v místním kině.
                                 <p>
                                     <div class="list-group">
                                         <div class="list-group-item list-group-item-warning">
-                                            <h4 class="list-group-item-heading">Týden pro rodiny s dětmi</h4>
+                                            <h4 class="list-group-item-heading">Dětský příměstský tábor</h4>
+                                            <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-warning">
+                                            <h4 class="list-group-item-heading">Dětský tábor s přespáním</h4>
                                             <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
                                         </div>
                                     </div>
                                 </p>
-                            </div>
-                        </div>
-
-                        <!-- /.row (nested) -->
-                    </div>
-                    <!-- /.col-lg-10 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Aniděti - aninuda!</h1>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio bg-warning">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Filmy</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="portfolio-item">
-                            <div class="embed-responsive embed-responsive-4by3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq"
-                                    frameborder="0" allowfullscreen></iframe>
-                            </div>
                         </div>
                     </div>
-                    <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQ5CJEVW19X0V7ENdXIbpMq" class="btn btn-md btn-dark">Všechny filmy <i class="fa fa-youtube"></i></a>
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="service-item">
+                            <a href="https://www.youtube.com/playlist?list=PLSUDHufzp1bQS6UkvM_K_SVJiFSDkTrS0" target="_blank">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-video-camera fa-stack-1x whiteonblack"></i>
+                                    </span>
+                            </a>
+                            <h4>
+                                <strong>Týden pro rodiny s dětmi na téma DOBRODRUŽSTVÍ ANIMACE</strong>
+                            </h4>
+                            <p>Srdečně Vás zveme na setkání rodin v krásném prostředí Jizerských hor. Vítány jsou rodiny, které
+                                mají zájem prožít víkend plný zážitků, objevit kouzlo animace a vytvořit si se svými dětmi
+                                svůj animovaný film.</p>
+                            <p>Pokusíme se Vás provést světem animovaného filmu tak, abyste si odvezli domů nejen autorské dílo,
+                                ale hlavně jakési know-how, jak si takový film udělat kdekoli, kdykoli, s kýmkoli – hlavně
+                                se svými dětmi! Rádi bychom Vás inspirovali, jak si se svými dětmi malovat, animovat a hrát
+                                si!
+                            </p>
+                            <p>Výhodou je mít svůj foťák a stativ, ale není to podmínkou. Předchozí výtvarné nebo filmové zkušenosti
+                                nevyžadujeme ani nepředpokládáme.</p>
+                            <p>
+                                <div class="list-group">
+                                    <div class="list-group-item list-group-item-warning">
+                                        <h4 class="list-group-item-heading">Týden pro rodiny s dětmi</h4>
+                                        <p class="list-group-item-text">Termín bude upřesněn v lednu 2017</p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
+</section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Kontakt</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="portfolio-item">
-                            <h4><strong>Aniděti</strong></h4>
-                            <p>Kateřina Knappová<br>Tylišovská 3<br>160 00, Praha 6</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-phone fa-fw"></i> 608 17 23 30</li>
-                                <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:katerina.knapp@gmail.com">katerina.knapp@gmail.com</a>
-                                </li>
-                            </ul>
-                            <!-- <br>
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                                </li>
-                            </ul> -->
-                        </div>
-                        <div class="google-maps">
-                            <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYOITTMUJPop3dtOKlCXgvkrbn7Daq-3s&q=Tylišovská 3, Praha 6"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Kontakt</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="portfolio-item">
+                        <h4><strong>Aniděti</strong></h4>
+                        <p>Kateřina Knappová<br>Tylišovská 3<br>160 00, Praha 6</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i> 608 17 23 30</li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:katerina.knapp@gmail.com">katerina.knapp@gmail.com</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Aniděti 2015</p>
-                </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Aniděti 2015</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!-- jQuery -->
+<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+<!-- Photoswipe JavaScript -->
+<script src="./node_modules/photoswipe/dist/photoswipe.min.js"></script>
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+<!-- Photoswipe UI JavaScript -->
+<script src="./node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
 
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+<!-- Custom Theme JavaScript -->
+<script>
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
+
+                               var initPhotoSwipeFromDOM = function (gallerySelector) {
+
+                                   // parse slide data (url, title, size ...) from DOM elements 
+                                   // (children of gallerySelector)
+                                   var parseThumbnailElements = function (el) {
+                                       var thumbElements = el.childNodes,
+                                           numNodes = thumbElements.length,
+                                           items = [],
+                                           figureEl,
+                                           linkEl,
+                                           size,
+                                           item;
+
+                                       for (var i = 0; i < numNodes; i++) {
+
+                                           figureEl = thumbElements[i]; // <figure> element
+
+                                           // include only element nodes 
+                                           if (figureEl.nodeType !== 1) {
+                                               continue;
+                                           }
+
+                                           linkEl = figureEl.children[0]; // <a> element
+
+                                           size = linkEl.getAttribute('data-size').split('x');
+
+                                           // create slide object
+                                           item = {
+                                               src: linkEl.getAttribute('href'),
+                                               w: parseInt(size[0], 10),
+                                               h: parseInt(size[1], 10)
+                                           };
+
+
+
+                                           if (figureEl.children.length > 1) {
+                                               // <figcaption> content
+                                               item.title = figureEl.children[1].innerHTML;
+                                           }
+
+                                           if (linkEl.children.length > 0) {
+                                               // <img> thumbnail element, retrieving thumbnail url
+                                               item.msrc = linkEl.children[0].getAttribute('src');
+                                           }
+
+                                           item.el = figureEl; // save link to element for getThumbBoundsFn
+                                           items.push(item);
+                                       }
+
+                                       return items;
+                                   };
+
+                                   // find nearest parent element
+                                   var closest = function closest(el, fn) {
+                                       return el && (fn(el) ? el : closest(el.parentNode, fn));
+                                   };
+
+                                   // triggers when user clicks on thumbnail
+                                   var onThumbnailsClick = function (e) {
+                                       e = e || window.event;
+                                       e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                                       var eTarget = e.target || e.srcElement;
+
+                                       // find root element of slide
+                                       var clickedListItem = closest(eTarget, function (el) {
+                                           return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                                       });
+
+                                       if (!clickedListItem) {
+                                           return;
+                                       }
+
+                                       // find index of clicked item by looping through all child nodes
+                                       // alternatively, you may define index via data- attribute
+                                       var clickedGallery = clickedListItem.parentNode,
+                                           childNodes = clickedListItem.parentNode.childNodes,
+                                           numChildNodes = childNodes.length,
+                                           nodeIndex = 0,
+                                           index;
+
+                                       for (var i = 0; i < numChildNodes; i++) {
+                                           if (childNodes[i].nodeType !== 1) {
+                                               continue;
+                                           }
+
+                                           if (childNodes[i] === clickedListItem) {
+                                               index = nodeIndex;
+                                               break;
+                                           }
+                                           nodeIndex++;
+                                       }
+
+
+
+                                       if (index >= 0) {
+                                           // open PhotoSwipe if valid index found
+                                           openPhotoSwipe(index, clickedGallery);
+                                       }
+                                       return false;
+                                   };
+
+                                   // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                                   var photoswipeParseHash = function () {
+                                       var hash = window.location.hash.substring(1),
+                                           params = {};
+
+                                       if (hash.length < 5) {
+                                           return params;
+                                       }
+
+                                       var vars = hash.split('&');
+                                       for (var i = 0; i < vars.length; i++) {
+                                           if (!vars[i]) {
+                                               continue;
+                                           }
+                                           var pair = vars[i].split('=');
+                                           if (pair.length < 2) {
+                                               continue;
+                                           }
+                                           params[pair[0]] = pair[1];
+                                       }
+
+                                       if (params.gid) {
+                                           params.gid = parseInt(params.gid, 10);
+                                       }
+
+                                       return params;
+                                   };
+
+                                   var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+                                       var pswpElement = document.querySelectorAll('.pswp')[0],
+                                           gallery,
+                                           options,
+                                           items;
+
+                                       items = parseThumbnailElements(galleryElement);
+
+                                       // define options (if needed)
+                                       options = {
+
+                                           // define gallery index (for URL)
+                                           galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                                           getThumbBoundsFn: function (index) {
+                                               // See Options -> getThumbBoundsFn section of documentation for more info
+                                               var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                                   pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                                   rect = thumbnail.getBoundingClientRect();
+
+                                               return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+                                           }
+
+                                       };
+
+                                       // PhotoSwipe opened from URL
+                                       if (fromURL) {
+                                           if (options.galleryPIDs) {
+                                               // parse real index when custom PIDs are used 
+                                               // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                                               for (var j = 0; j < items.length; j++) {
+                                                   if (items[j].pid == index) {
+                                                       options.index = j;
+                                                       break;
+                                                   }
+                                               }
+                                           } else {
+                                               // in URL indexes start from 1
+                                               options.index = parseInt(index, 10) - 1;
+                                           }
+                                       } else {
+                                           options.index = parseInt(index, 10);
+                                       }
+
+                                       // exit if index not found
+                                       if (isNaN(options.index)) {
+                                           return;
+                                       }
+
+                                       if (disableAnimation) {
+                                           options.showAnimationDuration = 0;
+                                       }
+
+                                       // Pass data to PhotoSwipe and initialize it
+                                       gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                                       gallery.init();
+                                   };
+
+                                   // loop through all gallery elements and bind events
+                                   var galleryElements = document.querySelectorAll(gallerySelector);
+
+                                   for (var i = 0, l = galleryElements.length; i < l; i++) {
+                                       galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                                       galleryElements[i].onclick = onThumbnailsClick;
+                                   }
+
+                                   // Parse URL and open gallery if it contains #&pid=3&gid=1
+                                   var hashData = photoswipeParseHash();
+                                   if (hashData.pid && hashData.gid) {
+                                       openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                                   }
+                               };
+
+                               // execute above function
+                               initPhotoSwipeFromDOM('.my-gallery');
+                               
+                               // Closes the sidebar menu
+                               $("#menu-close").click(function (e) {
+                                   e.preventDefault();
+                                   $("#sidebar-wrapper").toggleClass("active");
+                               });
+
+                               // Opens the sidebar menu
+                               $("#menu-toggle").click(function (e) {
+                                   e.preventDefault();
+                                   $("#sidebar-wrapper").toggleClass("active");
+                               });
+</script>
 </body>
 
 </html>
