@@ -30,6 +30,14 @@ body {
     font-size: 1.6em;
 }
 
+a {
+    color: #555555;
+}
+
+a:hover {
+    color: #777777;
+}
+
 .whiteonblack {
     color: #ffffff;
 }
