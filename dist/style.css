@@ -213,13 +213,13 @@ hr.camera:after {
 /* About */
 
 .about {
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 /* Services */
 
 .services {
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .service-item {
@@ -238,6 +238,14 @@ hr.camera:after {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.events {
+    padding: 50px 0;
+}
+
+.photos {
+    padding: 50px 0;
 }
 
 /* Portfolio */
