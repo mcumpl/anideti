@@ -38,6 +38,11 @@ a:hover {
     color: #777777;
 }
 
+h2.section-header {
+    margin-top: 0em;
+    padding-bottom: 1em;
+}
+
 .whiteonblack {
     color: #ffffff;
 }
@@ -208,13 +213,13 @@ hr.camera:after {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .service-item {
@@ -238,15 +243,15 @@ hr.camera:after {
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .img-portfolio {
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 .img-portfolio:hover {
@@ -256,7 +261,7 @@ hr.camera:after {
 /* Call to Action */
 
 .call-to-action {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .call-to-action .btn {
@@ -281,7 +286,7 @@ hr.camera:after {
 /* Footer */
 
 footer {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 /* Gallery */
