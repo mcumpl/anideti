@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
@@ -7,21 +9,20 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
+    libraryTarget: 'var',
+    library: 'Lib'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: [{
+        exclude: /node_modules/,
+        loader: [{
           loader: 'babel-loader',
           options: { presets: ['es2015'] }
         }],
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
+      }
+    ]
+  }
 };
