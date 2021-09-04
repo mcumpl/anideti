@@ -972,6 +972,9 @@ hr.camera:after {
     width: 100% !important;
     height: 100% !important;
 }
+.btn-youtube {
+  font-size: 100px;
+}
 
 /* Footer */
 
