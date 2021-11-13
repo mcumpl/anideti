@@ -1,787 +1,1710 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Škola animovaného filmu v Praze 6">
-    <meta name="author" content="Kateřina Knappová">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Škola animovaného filmu v Praze 6" />
+    <meta name="author" content="Kateřina Knappová" />
     <title>Aniděti - škola animovaného filmu</title>
-    <link href="./dist/bundle.min.css?v=2" rel="stylesheet">
-</head>
+    <link href="./dist/bundle.min.css?v=2" rel="stylesheet" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation -->
-    <a href="#" onclick="Lib.toggleMenu(event)" class="btn btn-dark btn-lg whiteonblack toggle menu-toggle"><span class="menu-text">MENU</span><i class="fa fa-bars"></i></a>
+    <a
+      href="#"
+      onclick="Lib.toggleMenu(event)"
+      class="btn btn-dark btn-lg whiteonblack toggle menu-toggle"
+      ><span class="menu-text">MENU</span><i class="fa fa-bars"></i
+    ></a>
     <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a href="#" onclick="Lib.toggleMenu(event)" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick="Lib.scrollAndClose(event, '#top')">Úvod</a>
-            </li>
-            <li>
-                <a href="#services" onclick="Lib.scrollAndClose(event, '#services')">Nabíka kurzů</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick="Lib.scrollAndClose(event, '#portfolio')">Naše filmy</a>
-            </li>
-            <li>
-                <a href="#events" onclick="Lib.scrollAndClose(event, '#events')">Aktuality</a>
-            </li>
-            <li>
-                <a href="#photos" onclick="Lib.scrollAndClose(event, '#photos')">Fotografie z kurzů</a>
-            </li>
+      <ul class="sidebar-nav">
+        <a
+          href="#"
+          onclick="Lib.toggleMenu(event)"
+          class="btn btn-dark btn-lg pull-right toggle"
+          ><i class="fa fa-times"></i
+        ></a>
+        <li class="sidebar-brand">
+          <a href="#top" onclick="Lib.scrollAndClose(event, '#top')">Úvod</a>
+        </li>
+        <li>
+          <a href="#services" onclick="Lib.scrollAndClose(event, '#services')"
+            >Nabíka kurzů</a
+          >
+        </li>
+        <li>
+          <a href="#portfolio" onclick="Lib.scrollAndClose(event, '#portfolio')"
+            >Naše filmy</a
+          >
+        </li>
+        <li>
+          <a href="#events" onclick="Lib.scrollAndClose(event, '#events')"
+            >Aktuality</a
+          >
+        </li>
+        <li>
+          <a href="#photos" onclick="Lib.scrollAndClose(event, '#photos')"
+            >Fotografie z kurzů</a
+          >
+        </li>
 
-            <li>
-                <a href="#contact" onclick="Lib.scrollAndClose(event, '#contact')">Kontakt</a>
-            </li>
-        </ul>
+        <li>
+          <a href="#contact" onclick="Lib.scrollAndClose(event, '#contact')"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1 class="whiteonblack">Aniděti</h1>
-            <h3 class="whiteonblack">Škola animovaného filmu v Praze 6</h3>
-            <br>
-            <a href="#about" onclick="Lib.scrollTo(event, '#about')" class="btn btn-dark btn-lg">ZJISTIT VÍCE <i class="fa fa-chevron-right"></i></a>
-        </div>
+      <div class="text-vertical-center">
+        <h1 class="whiteonblack">Aniděti</h1>
+        <h3 class="whiteonblack">Škola animovaného filmu v Praze 6</h3>
+        <br />
+        <a
+          href="#about"
+          onclick="Lib.scrollTo(event, '#about')"
+          class="btn btn-dark btn-lg"
+          >ZJISTIT VÍCE <i class="fa fa-chevron-right"></i
+        ></a>
+      </div>
     </header>
 
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p class="lead">Léta jsem pracovala jako scénáristka a režisérka. Narodily se mi děti a ponořila jsem se do světa dětské
-                        fantazie. Baví mě si s dětmi malovat, animovat a hrát si...</p>
-                    <p>&mdash;Kateřina Knappová</p>
-                </div>
-            </div>
-            <!-- /.row -->
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-header">Lektorky</h2>
         </div>
-        <!-- /.container -->
-    </section>
 
+                <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="service-item">
+                    <img
+                src="./img/katerina.jpg"
+                alt="Kateřina Knappová"
+              />
+                   
+                  <h4>
+                    <strong>Kateřina Knappová</strong>
+                  </h4>
+                  <div class="text-center">                        
+Vystudovala DAMU. Jako režisérka a scénáristka natáčela dokumentární filmy
+pro Českou televizi. Pracovala jako kurátorka v Leica Gallery Prague a
+v Divadelním ústavu. Po narození svých dvou dětí začala pořádat a lektorovat
+kurzy animovaného filmu pro děti.
+Ráda cestuje a obklopuje se krásnými věcmi a lidmi.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <div class="service-item">
+                    <img
+                src="./img/martina.jpg"
+                alt="Martina Turková"
+              />
+                  <h4>
+                    <strong
+                      >Martina Turková</strong
+                    >
+                  </h4>
+
+Vystudovala latinskou a francouzskou filologii na FFUK a dramatickou výchovu
+na DAMU. Pracovala jako muzejní pedagožka a lektorka zážitkových workshopů
+v Židovském muzeu v Praze. Vedla kroužky dramatické výchovy pro mladší děti.
+Připravovala vzdělávací projekty pro komunitní školu Zeměkvítek. Pracovala
+jako metodička a lektorky zážitkových workshopů pro společnost Post Bellum.
+Od roku 2018 spolupracuje s Kateřinou na tvorbě animovaných filmů s dětmi.
+Má ráda děti ve věku 0-100 a všechny zábavné formy vzdělávání.
+                </div>
+              </div>
+              <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </section>
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services">
-        <div class="container">
-            <div class="row text-center">
-                <h2 class="section-header">Nabídka kurzů</h2>
-            </div>
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row">
-
-                        <div class="col-md-6 col-sm-12">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                                <i class="fa fa-film fa-stack-1x black-text"></i>
-                            </span>
-                                <h4>
-                                    <strong>Kurzy animovaného filmu</strong>
-                                </h4>
-                                <div class="text-center">
-                                    <p>Náš pravidelný Kurz animovaného filmu je určen pro děti prvního stupně ZŠ. Dítě se seznámí
-                                        se základními technikami animovaného filmu jako je kreslená a loutková animace, animace
-                                        různých materiálů, pixilace a dozví se jak vznikají různé typy večerníčků.</p>
-                                    <p>Děti pracují ve skupinkách a spolupracují se svými kamarády. Hotové filmy veřejně promítáme
-                                        jednou až dvakrát ročně v kině Ponrepo, kde děti společně se svými rodinami a přáteli
-                                        zažijí slavnostní premiéru svých filmů.</p>
-                                    <p><strong>Místo:</strong> Praha 6 - Hanspaulka</p>
-                                    <p><strong>Cena za pololetí:</strong> 2 000,- Kč</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                                <i class="fa fa-university fa-stack-1x black-text"></i>
-                            </span>
-                                <h4>
-                                    <strong>Program pro děti prvního i druhého stupně ZŠ</strong>
-                                </h4>
-                                <p>Děti se velmi stručně dozví, jak vzniká animovaný film - od scénáře ke kameře, zvukové efekty,
-                                    jak funguje oko a co je optický klam. Následně se rozdělí do skupin, v rámci nichž si
-                                    vyberou jednotlivé profese: scénárista, režisér, výtvarník/animátor, kameraman, zvukový
-                                    mistr. Dětí si vyberou krátký příběh, vytvoří obrazový scénář a začnnou snímat rozpohybované
-                                    předměty. Nakonec nasadíme zvuk a titulky.</p>
-                                <p><strong>Čas:</strong> Celé školní dopoledne (od 8.00 do 12.30)</p>
-                                <p><strong>Cena:</strong> 3 000,- Kč</p>
-                            </div>
-                        </div>
-                        <!-- /.row (nested) -->
-                    </div>
-                    <!-- /.col-lg-10 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-header">Nabídka kurzů</h2>
         </div>
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
+                    <i class="fa fa-film fa-stack-1x black-text"></i>
+                  </span>
+                  <h4>
+                    <strong>Kurzy animovaného filmu</strong>
+                  </h4>
+                  <div class="text-center">
+                    <p>
+                      Náš pravidelný Kurz animovaného filmu je určen pro děti
+                      prvního stupně ZŠ. Dítě se seznámí se základními
+                      technikami animovaného filmu jako je kreslená a loutková
+                      animace, animace různých materiálů, pixilace a dozví se
+                      jak vznikají různé typy večerníčků.
+                    </p>
+                    <p>
+                      Děti pracují ve skupinkách a spolupracují se svými
+                      kamarády. Hotové filmy veřejně promítáme jednou až dvakrát
+                      ročně v kině Ponrepo, kde děti společně se svými rodinami
+                      a přáteli zažijí slavnostní premiéru svých filmů.
+                    </p>
+                    <p><strong>Místo:</strong> Praha 6 - Hanspaulka</p>
+                    <p><strong>Cena za pololetí:</strong> 2 000,- Kč</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
+                    <i class="fa fa-university fa-stack-1x black-text"></i>
+                  </span>
+                  <h4>
+                    <strong
+                      >Program pro děti prvního i druhého stupně ZŠ</strong
+                    >
+                  </h4>
+                  <p>
+                    Děti se velmi stručně dozví, jak vzniká animovaný film - od
+                    scénáře ke kameře, zvukové efekty, jak funguje oko a co je
+                    optický klam. Následně se rozdělí do skupin, v rámci nichž
+                    si vyberou jednotlivé profese: scénárista, režisér,
+                    výtvarník/animátor, kameraman, zvukový mistr. Dětí si
+                    vyberou krátký příběh, vytvoří obrazový scénář a začnnou
+                    snímat rozpohybované předměty. Nakonec nasadíme zvuk a
+                    titulky.
+                  </p>
+                  <p>
+                    <strong>Čas:</strong> Celé školní dopoledne (od 8.00 do
+                    12.30)
+                  </p>
+                  <p><strong>Cena:</strong> 3 000,- Kč</p>
+                </div>
+              </div>
+              <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
     </section>
 
     <!-- Callout -->
     <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Aniděti - aninuda!</h1>
-        </div>
+      <div class="text-vertical-center">
+        <h1>Aniděti - aninuda!</h1>
+      </div>
     </aside>
 
-        <!-- Portfolio -->
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row text-center">
-                <h2 class="section-header">Všechny filmy najdete na našem <a style="color: #ffffff" href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A">Youtube kanálu</a></h2>
-            </div>
-
-
-            <div class="row text-center">
-                <a href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A" class="btn btn-lg" style="font-size: 5rem; color: #ffffff">Aniděti <i class="fa fa-youtube"></i></a>
-            </div>
-    
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-header">
+            Všechny filmy najdete na našem
+            <a
+              style="color: #ffffff"
+              href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A"
+              >Youtube kanálu</a
+            >
+          </h2>
         </div>
-        <!-- /.container -->
+
+        <div class="row text-center">
+          <a
+            href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A"
+            class="btn btn-lg"
+            style="font-size: 5rem; color: #ffffff"
+            >Aniděti <i class="fa fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <!-- /.container -->
     </section>
 
     <section id="events" class="events">
-        <div class="container">
-            <div class="row text-center">
-                <h2 class="section-header">Aktuality</h2>
-            </div>
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/refufest.png" alt="Demokracie mýma očima">
-                        <div class="caption">
-                            <h3>Demokracie mýma očima</h3>
-                            <p>13 minutový spot s názvem „Demokracie mýma očima“ teď míří do českých škol!
-Výstupem projektu, který začal na podzim roku 2020 v neziskové organizaci InBáze je animované video, ve kterém 12 dětí původem z Ukrajiny, Nepálu, Vietnamu, Filipín, ale i z Čech ztvárnilo, co pro ně znamená slovo „demokracie“. 
-Premiéra proběhla na Refufestu 2021 - <a href="https://www.ceskatelevize.cz/ivysilani/11690334848-sousede/421236100111008/obsah/857382-festival-refufest">více zde</a>.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/premiera2018.jpg" alt="Konečně hotovo. Hurá na premiéru!">
-                        <div class="caption">
-                            <h3>Konečně hotovo. Hurá na premiéru!</h3>
-                            <p>V sobotu 19.5.2018 proběhne v 9 hodin v kině 35 Francouzského institutu již naše čtvrté slavnostní premiérové promítání filmů. Letos jde o pásmo zhruba třiceti krátkých autorských filmů anidětí a na vrch jeden film pro hosta o vepříkovi Pepříkovi. Jste opět všichni srdečně zváni!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/peprny.jpg" alt="Letošní téma? ">
-                        <div class="caption">
-                            <h3>Letošní téma?</h3>
-                            <p>Vše začalo za císaře Rudolfa II. Námět nám přinesl Libor Peprný, se kterým jsme se v pátek 10.11. 2017 sešli v našem útulném ateliéru, abychom společně vystavěli scénář. Více neprozradíme, až na premiéře opět v jednom z pražských kin.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/kintera.jpg" alt="Výstava Kryštofa Kintery">
-                        <div class="caption">
-                            <h3>Výstava Kryštofa Kintery</h3>
-                            <p>Animace v roce 2017/18 jsme zahájili výstavou Krištofa Kintery. Aniděti inspirovány výstavou se pustily do svých vlastních instalací. Uvidíme, jestli se vejdeme do ateliéru.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/opticke-hracky.jpg" alt="Optické hračky">
-                        <div class="caption">
-                            <h3>Optické hračky</h3>
-                            <p>V roce 2017/2018 jsou do kurzu nově zařazeny tzv. střípky z historie filmu. Děti si „čistě prakticky“ prožijí technický vývoj filmu. Začínáme optickými hračkami: vyrábíme flipbooky, zoetrope, ale i cameru obscuru a kinetoskop ... Jó ti naši pradědové, ti se měli ...</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/merboltice3.jpg" alt="Krátký film v dlouhé vesnici 2017">
-                        <div class="caption">
-                            <h3>Krátký film v dlouhé vesnici 2017</h3>
-                            <p>9. září 2017 jsme byli opět hosty filmového festivalu Krátký film v dlouhé vesnici, který se koná na kozí farmě v Merbolticích.  Tentokrát jsme přivezli náš film O záři slunce a zrození lidí. Bylo to fajn a rádi přijedeme i příští rok. Děkujeme!</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/tabor.jpg" alt="Anitábor 2017">
-                        <div class="caption">
-                            <h3>Anitábor 2017</h3>
-                            <p>V létě 2017 jsme s anidětmi a jejich kamarády prožili dva krásné tábory. Od animace jsme si sice odpočinuli, ale foťáky jsme stejně nepustili z ruky. Prošli jsme si základy fotografie a zkusili si pár fotografických triků. Příští léto zase spolu!</p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/nafilm.jpg" alt="Aniděti ve filmovém muzeu">
-                        <div class="caption">
-                            <h3>Aniděti ve filmovém muzeu</h3>
-                            <p>Zažili jsme „film jinak“ na interaktivní výstavě filmového muzea NaFilm, která nám odkryla 
-                                podstatu filmu a jeho první podoby a otevřela svět fantazie meziválečných avantgardistů. Moc se nám tam líbilo!</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/hybohledy.jpg" alt="Aniděti na výstavě">
-                        <div class="caption">
-                            <h3>Aniděti na výstavě</h3>
-                            <p>Jako každý rok jsme byli za odměnu za naši celoroční práci na výstavě. Tentokrát jsme zajeli
-                                na Portheimku, kde jsme si užili HYBOHLEDY Pavla Macka a KABINETY Stuchlé.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/mytus2.jpg" alt="Ukázka z nového filmu MÝTUS">
-                        <div class="caption">
-                            <h3>Premiéra nového filmu MÝTUS</h3>
-                            <p>18. března 2017 proběhne v kině MAT na Karlově náměstí ve 13 hodin odpoledne premiéra našeho
-                                nového filmu MYTUS na motivy egyptského mýtu o vzniku světa. Jste všichni srdečně zváni!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/jirka.jpg" alt="Povídání o egyptské mytologii">
-                        <div class="caption">
-                            <h3>Povídání o egyptské mytologii</h3>
-                            <p>10. října 2016 navštívil náš kurs egyptolog Jiří Janák a zasvětil děti do tajů egyptské mytologie.
-                                Odstartoval tak práci na filmu na motivy egyptského mýtu o vzniku světa.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/atelier.jpg" alt="Máme nový atelier">
-                        <div class="caption">
-                            <h3>Aniděti mají nový ateliér!</h3>
-                            <p>4. října 2016 jsme s Anidětmi slavnostně otevřeli náš nový ateliér, ve kterém se budeme moci
-                                konečně pořádně rozmáchnout. Těšte se na naše nové filmy.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/merboltice2.jpg" alt="Merboltický festival Krátký film v dlouhé vesnici">
-                        <div class="caption">
-                            <h3>Aniděti na festivalu Krátký film v dlouhé vesnici</h3>
-                            <p>10. září 2016 se promítal náš film Odysseova dobrodružství na moři i na souši na festivalu Krátký
-                                film v dlouhé vesnici v Merbolticích. Pro veliký úspěch jsem pozváni i přístí rok.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/karlovka3.jpg" alt="Týdenní tábor na Karlovce">
-                        <div class="caption">
-                            <h3>Týdenní tábor pro rodiny s dětmi</h3>
-                            <p>Každý rok pořádáme setkání rodin na téma DOBRODRUŽSTVÍ ANIMACE, na kterém vzniká mnoho zajímavých filmů. Projekt byl podpořen Evropskou Unií z Evropského
-                                fondu pro regionální rozvoj z Programu spolupráce Česká republika – Svobodný stát Sasko 2014-2020
-                                v rámci Fondu malých projektů Euroregionu Nisa.<br />
-                                <a href="http://www.krasnajurta.cz/setkani-rodin-na-tema-dobrodruzstvi-animace/" target="_blank">VÍCE INFORMACÍ <i class="fa fa-chevron-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-3">
-                    <div class="thumbnail">
-                        <img src="./img/events/odysseus.jpg" alt="Týdenní tábor na Karlovce">
-                        <div class="caption">
-                            <h3>Odysseova dobrodružství na moři i na souši</h3>
-                            <p>Slavnostní premiéru našeho zatím nejvýpravnějšího filmu máme za sebou.
-                                Tak ještě jednou, aniděti, byly jste skvělé! Další filmy budou následovat!</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-header">Aktuality</h2>
         </div>
-        <!-- /.container -->
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/refufest.png"
+                alt="Demokracie mýma očima"
+              />
+              <div class="caption">
+                <h3>Demokracie mýma očima</h3>
+                <p>
+                  13 minutový spot s názvem „Demokracie mýma očima“ teď míří do
+                  českých škol! Výstupem projektu, který začal na podzim roku
+                  2020 v neziskové organizaci InBáze je animované video, ve
+                  kterém 12 dětí původem z Ukrajiny, Nepálu, Vietnamu, Filipín,
+                  ale i z Čech ztvárnilo, co pro ně znamená slovo „demokracie“.
+                  Premiéra proběhla na Refufestu 2021 -
+                  <a
+                    href="https://www.ceskatelevize.cz/ivysilani/11690334848-sousede/421236100111008/obsah/857382-festival-refufest"
+                    >více zde</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/premiera2018.jpg"
+                alt="Konečně hotovo. Hurá na premiéru!"
+              />
+              <div class="caption">
+                <h3>Konečně hotovo. Hurá na premiéru!</h3>
+                <p>
+                  V sobotu 19.5.2018 proběhne v 9 hodin v kině 35 Francouzského
+                  institutu již naše čtvrté slavnostní premiérové promítání
+                  filmů. Letos jde o pásmo zhruba třiceti krátkých autorských
+                  filmů anidětí a na vrch jeden film pro hosta o vepříkovi
+                  Pepříkovi. Jste opět všichni srdečně zváni!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img src="./img/events/peprny.jpg" alt="Letošní téma? " />
+              <div class="caption">
+                <h3>Letošní téma?</h3>
+                <p>
+                  Vše začalo za císaře Rudolfa II. Námět nám přinesl Libor
+                  Peprný, se kterým jsme se v pátek 10.11. 2017 sešli v našem
+                  útulném ateliéru, abychom společně vystavěli scénář. Více
+                  neprozradíme, až na premiéře opět v jednom z pražských kin.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/kintera.jpg"
+                alt="Výstava Kryštofa Kintery"
+              />
+              <div class="caption">
+                <h3>Výstava Kryštofa Kintery</h3>
+                <p>
+                  Animace v roce 2017/18 jsme zahájili výstavou Krištofa
+                  Kintery. Aniděti inspirovány výstavou se pustily do svých
+                  vlastních instalací. Uvidíme, jestli se vejdeme do ateliéru.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img src="./img/events/opticke-hracky.jpg" alt="Optické hračky" />
+              <div class="caption">
+                <h3>Optické hračky</h3>
+                <p>
+                  V roce 2017/2018 jsou do kurzu nově zařazeny tzv. střípky z
+                  historie filmu. Děti si „čistě prakticky“ prožijí technický
+                  vývoj filmu. Začínáme optickými hračkami: vyrábíme flipbooky,
+                  zoetrope, ale i cameru obscuru a kinetoskop ... Jó ti naši
+                  pradědové, ti se měli ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/merboltice3.jpg"
+                alt="Krátký film v dlouhé vesnici 2017"
+              />
+              <div class="caption">
+                <h3>Krátký film v dlouhé vesnici 2017</h3>
+                <p>
+                  9. září 2017 jsme byli opět hosty filmového festivalu Krátký
+                  film v dlouhé vesnici, který se koná na kozí farmě v
+                  Merbolticích. Tentokrát jsme přivezli náš film O záři slunce a
+                  zrození lidí. Bylo to fajn a rádi přijedeme i příští rok.
+                  Děkujeme!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img src="./img/events/tabor.jpg" alt="Anitábor 2017" />
+              <div class="caption">
+                <h3>Anitábor 2017</h3>
+                <p>
+                  V létě 2017 jsme s anidětmi a jejich kamarády prožili dva
+                  krásné tábory. Od animace jsme si sice odpočinuli, ale foťáky
+                  jsme stejně nepustili z ruky. Prošli jsme si základy
+                  fotografie a zkusili si pár fotografických triků. Příští léto
+                  zase spolu!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/nafilm.jpg"
+                alt="Aniděti ve filmovém muzeu"
+              />
+              <div class="caption">
+                <h3>Aniděti ve filmovém muzeu</h3>
+                <p>
+                  Zažili jsme „film jinak“ na interaktivní výstavě filmového
+                  muzea NaFilm, která nám odkryla podstatu filmu a jeho první
+                  podoby a otevřela svět fantazie meziválečných avantgardistů.
+                  Moc se nám tam líbilo!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img src="./img/events/hybohledy.jpg" alt="Aniděti na výstavě" />
+              <div class="caption">
+                <h3>Aniděti na výstavě</h3>
+                <p>
+                  Jako každý rok jsme byli za odměnu za naši celoroční práci na
+                  výstavě. Tentokrát jsme zajeli na Portheimku, kde jsme si
+                  užili HYBOHLEDY Pavla Macka a KABINETY Stuchlé.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/mytus2.jpg"
+                alt="Ukázka z nového filmu MÝTUS"
+              />
+              <div class="caption">
+                <h3>Premiéra nového filmu MÝTUS</h3>
+                <p>
+                  18. března 2017 proběhne v kině MAT na Karlově náměstí ve 13
+                  hodin odpoledne premiéra našeho nového filmu MYTUS na motivy
+                  egyptského mýtu o vzniku světa. Jste všichni srdečně zváni!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/jirka.jpg"
+                alt="Povídání o egyptské mytologii"
+              />
+              <div class="caption">
+                <h3>Povídání o egyptské mytologii</h3>
+                <p>
+                  10. října 2016 navštívil náš kurs egyptolog Jiří Janák a
+                  zasvětil děti do tajů egyptské mytologie. Odstartoval tak
+                  práci na filmu na motivy egyptského mýtu o vzniku světa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img src="./img/events/atelier.jpg" alt="Máme nový atelier" />
+              <div class="caption">
+                <h3>Aniděti mají nový ateliér!</h3>
+                <p>
+                  4. října 2016 jsme s Anidětmi slavnostně otevřeli náš nový
+                  ateliér, ve kterém se budeme moci konečně pořádně rozmáchnout.
+                  Těšte se na naše nové filmy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/merboltice2.jpg"
+                alt="Merboltický festival Krátký film v dlouhé vesnici"
+              />
+              <div class="caption">
+                <h3>Aniděti na festivalu Krátký film v dlouhé vesnici</h3>
+                <p>
+                  10. září 2016 se promítal náš film Odysseova dobrodružství na
+                  moři i na souši na festivalu Krátký film v dlouhé vesnici v
+                  Merbolticích. Pro veliký úspěch jsem pozváni i přístí rok.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/karlovka3.jpg"
+                alt="Týdenní tábor na Karlovce"
+              />
+              <div class="caption">
+                <h3>Týdenní tábor pro rodiny s dětmi</h3>
+                <p>
+                  Každý rok pořádáme setkání rodin na téma DOBRODRUŽSTVÍ
+                  ANIMACE, na kterém vzniká mnoho zajímavých filmů. Projekt byl
+                  podpořen Evropskou Unií z Evropského fondu pro regionální
+                  rozvoj z Programu spolupráce Česká republika – Svobodný stát
+                  Sasko 2014-2020 v rámci Fondu malých projektů Euroregionu
+                  Nisa.<br />
+                  <a
+                    href="http://www.krasnajurta.cz/setkani-rodin-na-tema-dobrodruzstvi-animace/"
+                    target="_blank"
+                    >VÍCE INFORMACÍ <i class="fa fa-chevron-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="thumbnail">
+              <img
+                src="./img/events/odysseus.jpg"
+                alt="Týdenní tábor na Karlovce"
+              />
+              <div class="caption">
+                <h3>Odysseova dobrodružství na moři i na souši</h3>
+                <p>
+                  Slavnostní premiéru našeho zatím nejvýpravnějšího filmu máme
+                  za sebou. Tak ještě jednou, aniděti, byly jste skvělé! Další
+                  filmy budou následovat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
     </section>
 
-    <section id="photos" class="photos" style="padding-top:30px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 class="section-header">Fotografie z kurzů</h2>
+    <section id="photos" class="photos" style="padding-top: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h2 class="section-header">Fotografie z kurzů</h2>
 
-                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/1.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t1.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+            <div
+              class="my-gallery"
+              itemscope
+              itemtype="http://schema.org/ImageGallery"
+            >
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/1.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t1.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/2.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t2.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/2.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t2.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/3.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t3.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/3.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t3.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/4.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t4.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/4.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t4.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/5.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t5.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/5.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t5.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/6.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t6.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/6.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t6.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/7.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t7.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/7.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t7.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/8.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t8.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/8.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t8.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/9.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t9.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/9.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t9.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/10.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t10.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/10.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t10.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/11.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t11.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/11.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t11.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/12.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t12.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/12.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t12.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/13.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t13.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/13.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t13.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/14.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t14.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/14.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t14.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/15.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t15.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/15.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t15.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/16.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t16.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/16.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t16.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/17.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t17.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/17.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t17.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
 
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/18.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t18.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/19.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t19.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/20.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t20.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/21.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t21.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/22.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t22.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/23.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t23.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/24.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t24.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/25.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t25.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/26.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t26.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/27.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t27.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/28.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t28.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/29.jpg" itemprop="contentUrl" data-size="2000x1330">
-                                <img src="./img/photos/t29.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/30.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t30.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/31.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t31.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/32.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t32.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/33.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t33.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/34.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t34.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/35.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t35.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/36.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t36.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/37.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t37.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/38.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t38.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/39.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t39.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/40.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t40.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/41.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t41.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/42.jpg" itemprop="contentUrl" data-size="1500x2000">
-                                <img src="./img/photos/t42.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/43.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t43.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/44.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t44.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/45.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t45.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/46.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t46.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/47.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t47.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/48.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t48.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/49.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t49.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/50.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t50.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./img/photos/51.jpg" itemprop="contentUrl" data-size="2000x1500">
-                                <img src="./img/photos/t51.jpg" itemprop="thumbnail" alt="Takhle to vypadá na našich hodinách" />
-                            </a>
-                            <figcaption itemprop="caption description">Takhle to vypadá na našich hodinách</figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-                        <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-                        <div class="pswp__bg"></div>
-
-                        <!-- Slides wrapper with overflow:hidden. -->
-                        <div class="pswp__scroll-wrap">
-
-                            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                            <div class="pswp__container">
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                            </div>
-
-                            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                            <div class="pswp__ui pswp__ui--hidden">
-
-                                <div class="pswp__top-bar">
-
-                                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                                    <div class="pswp__counter"></div>
-
-                                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                                    <div class="pswp__preloader">
-                                        <div class="pswp__preloader__icn">
-                                            <div class="pswp__preloader__cut">
-                                                <div class="pswp__preloader__donut"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                    <div class="pswp__share-tooltip"></div>
-                                </div>
-
-                                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-                                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-                                <div class="pswp__caption">
-                                    <div class="pswp__caption__center"></div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/18.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t18.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/19.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t19.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/20.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t20.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/21.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t21.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/22.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t22.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/23.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t23.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/24.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t24.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/25.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t25.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/26.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t26.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/27.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t27.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/28.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t28.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/29.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1330"
+                >
+                  <img
+                    src="./img/photos/t29.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/30.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t30.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/31.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t31.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/32.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t32.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/33.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t33.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/34.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t34.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/35.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t35.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/36.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t36.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/37.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t37.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/38.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t38.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/39.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t39.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/40.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t40.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/41.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t41.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/42.jpg"
+                  itemprop="contentUrl"
+                  data-size="1500x2000"
+                >
+                  <img
+                    src="./img/photos/t42.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/43.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t43.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/44.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t44.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/45.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t45.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/46.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t46.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/47.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t47.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/48.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t48.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/49.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t49.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/50.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t50.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
+              <figure
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <a
+                  href="./img/photos/51.jpg"
+                  itemprop="contentUrl"
+                  data-size="2000x1500"
+                >
+                  <img
+                    src="./img/photos/t51.jpg"
+                    itemprop="thumbnail"
+                    alt="Takhle to vypadá na našich hodinách"
+                  />
+                </a>
+                <figcaption itemprop="caption description">
+                  Takhle to vypadá na našich hodinách
+                </figcaption>
+              </figure>
             </div>
+
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+              <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+              <div class="pswp__bg"></div>
+
+              <!-- Slides wrapper with overflow:hidden. -->
+              <div class="pswp__scroll-wrap">
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                  <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button
+                      class="pswp__button pswp__button--close"
+                      title="Close (Esc)"
+                    ></button>
+
+                    <button
+                      class="pswp__button pswp__button--fs"
+                      title="Toggle fullscreen"
+                    ></button>
+
+                    <button
+                      class="pswp__button pswp__button--zoom"
+                      title="Zoom in/out"
+                    ></button>
+
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="
+                      pswp__share-modal
+                      pswp__share-modal--hidden
+                      pswp__single-tap
+                    "
+                  >
+                    <div class="pswp__share-tooltip"></div>
+                  </div>
+
+                  <button
+                    class="pswp__button pswp__button--arrow--left"
+                    title="Previous (arrow left)"
+                  ></button>
+
+                  <button
+                    class="pswp__button pswp__button--arrow--right"
+                    title="Next (arrow right)"
+                  ></button>
+
+                  <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.container -->
+      </div>
+      <!-- /.container -->
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact" style="padding-top:50px">
-        <div class="container">
+    <section id="contact" class="contact" style="padding-top: 50px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h2 class="section-header">Kontakt</h2>
             <div class="row">
-
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 class="section-header">Kontakt</h2>
-                    <div class="row">
-                        <div class="portfolio-item">
-                            <address>
-                                <strong>Aniděti</strong>
-                                <p>Kateřina Knappová<br>Tylišovská 3<br>160 00, Praha 6</p>
-                                <ul class="list-unstyled">
-                                    <li><i class="fa fa-phone fa-fw"></i> 608 17 23 30</li>
-                                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:katerina.knapp@gmail.com">katerina.knapp@gmail.com</a>
-                                    </li>
-                                </ul>
-                            </address>
-                        </div>
-                        <div class="google-maps">
-                            <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYOITTMUJPop3dtOKlCXgvkrbn7Daq-3s&q=Tylišovská 3, Praha 6"
-                                allowfullscreen>
-                                </iframe>
-                        </div>
-                    </div>
-                </div>
+              <div class="portfolio-item">
+                <address>
+                  <strong>Aniděti</strong>
+                  <p>
+                    Kateřina Knappová<br />Tylišovská 3<br />160 00, Praha 6
+                  </p>
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> 608 17 23 30</li>
+                    <li>
+                      <i class="fa fa-envelope-o fa-fw"></i>
+                      <a href="mailto:katerina.knapp@gmail.com"
+                        >katerina.knapp@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+              </div>
+              <div class="google-maps">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYOITTMUJPop3dtOKlCXgvkrbn7Daq-3s&q=Tylišovská 3, Praha 6"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <p class="text-muted">Copyright &copy; Aniděti 2021</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <p class="text-muted">Copyright &copy; Aniděti 2021</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Webpack JS bundle -->
     <script src="./dist/bundle.js?v=1"></script>
-
-</body>
-
+  </body>
 </html>
