@@ -10283,11 +10283,16 @@ body {
 }
 
 a {
-  color: #555555;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a.no-underline {
+  text-decoration: none;
 }
 
 a:hover {
-  color: #777777;
+  color: #ffffff;
 }
 
 h2.section-header {
