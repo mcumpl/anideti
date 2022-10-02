@@ -10287,6 +10287,11 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 a.no-underline {
   text-decoration: none;
 }
