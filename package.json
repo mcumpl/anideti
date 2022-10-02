@@ -2,10 +2,12 @@
   "name": "anideti",
   "version": "1.0.0",
   "description": "Anideti website",
-  "main": "index.html",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "build-dev": "webpack",
-    "build-prod": "webpack -p"
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
@@ -18,23 +20,10 @@
   },
   "homepage": "https://github.com/mcumpl/anideti#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1",
     "photoswipe": "^4.1.1"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.18.0",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-beta.5",
-    "file-loader": "^0.9.0",
-    "prettier": "2.7.1",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.2.0-rc.4"
+    "parcel": "^2.7.0",
+    "prettier": "2.7.1"
   }
 }

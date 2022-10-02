@@ -1,34 +1,68 @@
-import $ from "jquery";
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 
-/*
-import BSStyles from "bootstrap/dist/css/bootstrap.css";
-import PSStyles from "photoswipe/dist/photoswipe.css";
-import PSDSStyles from "photoswipe/dist/default-skin/default-skin.css";
-import FAStyles from "font-awesome/css/font-awesome.min.css";
-import Styles from "./style.css";
-*/
-
-export function scrollTo(event, selector) {
+function scrollTo(event, selector) {
   event.preventDefault();
-  $("html, body").animate(
-    {
-      scrollTop: $(selector).offset().top,
-    },
-    1500
-  );
+  document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
 }
 
-export function toggleMenu(event) {
+function openMenu(event) {
   event.preventDefault();
-  $("#sidebar-wrapper").toggleClass("active");
+  document.getElementById("sidebar-wrapper").classList.add("active");
 }
 
-export function scrollAndClose(event, selector) {
+function closeMenu(event) {
+  event.preventDefault();
+  document.getElementById("sidebar-wrapper").classList.remove("active");
+}
+
+function scrollAndClose(event, selector) {
   scrollTo(event, selector);
-  toggleMenu(event);
+  closeMenu(event);
 }
+
+const openMenuEl = document.getElementById("open-menu");
+openMenuEl.addEventListener("click", openMenu);
+
+const closeMenuEl = document.getElementById("close-menu");
+closeMenuEl.addEventListener("click", closeMenu);
+
+const topMenuEl = document.getElementById("top-menu");
+topMenuEl.addEventListener("click", (event) => scrollAndClose(event, "#top"));
+
+const aboutMenuEl = document.getElementById("about-menu");
+aboutMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#about")
+);
+
+const servicesMenuEl = document.getElementById("services-menu");
+servicesMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#services")
+);
+
+const portfolioMenuEl = document.getElementById("portfolio-menu");
+portfolioMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#portfolio")
+);
+
+const eventsMenuEl = document.getElementById("events-menu");
+eventsMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#events")
+);
+
+const photosMenuEl = document.getElementById("photos-menu");
+photosMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#photos")
+);
+
+const contactMenuEl = document.getElementById("contact-menu");
+contactMenuEl.addEventListener("click", (event) =>
+  scrollAndClose(event, "#contact")
+);
+
+document.querySelectorAll("#contact-menu").forEach((item) => {
+  item.addEventListener("click", (event) => scrollAndClose(event, "#contact"));
+});
 
 function initPhotoSwipeFromDOM(gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements

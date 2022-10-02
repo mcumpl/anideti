@@ -7,25 +7,14 @@
     <meta name="description" content="Škola animovaného filmu v Praze 6" />
     <meta name="author" content="Kateřina Knappová" />
     <title>Aniděti - škola animovaného filmu</title>
-    <link href="./dist/bundle.min.css?v=2" rel="stylesheet" />
-    <style>
-      .event-image {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-        margin: 20px;
-      }
-      .event-text {
-        margin: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
   </head>
-
   <body>
     <!-- Navigation -->
     <a
       href="#"
-      onclick="Lib.toggleMenu(event)"
+      id="open-menu"
       class="btn btn-dark btn-lg whiteonblack toggle menu-toggle"
       ><span class="menu-text">MENU</span><i class="fa fa-bars"></i
     ></a>
@@ -33,38 +22,28 @@
       <ul class="sidebar-nav">
         <a
           href="#"
-          onclick="Lib.toggleMenu(event)"
+          id="close-menu"
           class="btn btn-dark btn-lg pull-right toggle"
           ><i class="fa fa-times"></i
         ></a>
         <li class="sidebar-brand">
-          <a href="#top" onclick="Lib.scrollAndClose(event, '#top')">Úvod</a>
+          <a href="#top" id="top-menu">Úvod</a>
         </li>
         <li>
-          <a href="#services" onclick="Lib.scrollAndClose(event, '#services')"
-            >Nabíka kurzů</a
-          >
+          <a href="#services" id="services-menu">Nabíka kurzů</a>
         </li>
         <li>
-          <a href="#portfolio" onclick="Lib.scrollAndClose(event, '#portfolio')"
-            >Naše filmy</a
-          >
+          <a href="#portfolio" id="portfolio-menu">Naše filmy</a>
         </li>
         <li>
-          <a href="#events" onclick="Lib.scrollAndClose(event, '#events')"
-            >Jak pracujeme</a
-          >
+          <a href="#events" id="events-menu">Jak pracujeme</a>
         </li>
         <li>
-          <a href="#photos" onclick="Lib.scrollAndClose(event, '#photos')"
-            >Fotografie z kurzů</a
-          >
+          <a href="#photos" id="photos-menu">Fotografie z kurzů</a>
         </li>
 
         <li>
-          <a href="#contact" onclick="Lib.scrollAndClose(event, '#contact')"
-            >Kontakt</a
-          >
+          <a href="#contact" id="contact-menu">Kontakt</a>
         </li>
       </ul>
     </nav>
@@ -77,7 +56,7 @@
         <br />
         <a
           href="#about"
-          onclick="Lib.scrollTo(event, '#about')"
+          id="about-menu"
           class="btn btn-dark btn-lg"
           >ZJISTIT VÍCE <i class="fa fa-chevron-right"></i
         ></a>
@@ -182,9 +161,7 @@
 
                     <p>
                       <strong>Kontakt:</strong>
-                      <a
-                        href="#contact"
-                        onclick="Lib.scrollTo(event, '#contact')"
+                      <a href="#contact" id="contact-menu"
                         >zde</a
                       >
                     </p>
@@ -362,9 +339,7 @@
                     <p>ATELIER Hanspaulka – PRAHA 6</p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a
-                        href="#contact"
-                        onclick="Lib.scrollTo(event, '#contact')"
+                      <a href="#contact" id="contact-menu""
                         >zde</a
                       >
                     </p>
@@ -413,9 +388,7 @@
                     <p><strong>Maximální počet účastníků:</strong> 6</p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a
-                        href="#contact"
-                        onclick="Lib.scrollTo(event, '#contact')"
+                      <a href="#contact" id="contact-menu"
                         >zde</a
                       >
                     </p>
@@ -479,9 +452,7 @@
                     </p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a
-                        href="#contact"
-                        onclick="Lib.scrollTo(event, '#contact')"
+                      <a href="#contact" id="contact-menu"
                         >zde</a
                       >
                     </p>
@@ -695,7 +666,6 @@
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1 text-center">
             <h2 class="section-header">Fotografie z kurzů</h2>
-
             <div
               class="my-gallery"
               itemscope
@@ -1862,13 +1832,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1 text-center">
-            <p class="text-muted">Copyright &copy; Aniděti 2021</p>
+            <p class="text-muted">Copyright &copy; Aniděti 2022</p>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- Webpack JS bundle -->
-    <script src="./dist/bundle.js?v=1"></script>
   </body>
 </html>
