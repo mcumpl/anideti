@@ -7,26 +7,164 @@
     <meta name="description" content="Škola animovaného filmu v Praze 6" />
     <meta name="author" content="Kateřina Knappová" />
     <title>Aniděti - škola animovaného filmu</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/main.scss" />
     <script type="module" src="app.js"></script>
   </head>
   <body>
+    <!-- Container for demo purpose -->
+    <div class="container my-24 px-6 mx-auto">
+      <!-- Section: Design Block -->
+      <section class="mb-32 text-gray-800 background-radial-gradient">
+        <style>
+          .background-radial-gradient {
+            background-color: hsl(218, 41%, 15%);
+            background-image: radial-gradient(
+                650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%
+              ),
+              radial-gradient(
+                1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%
+              );
+          }
+        </style>
+
+        <div class="px-6 py-12 md:px-12 text-center lg:text-left">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+              <div class="mt-12 lg:mt-0">
+                <h1
+                  class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
+                  style="color: hsl(218, 81%, 95%)"
+                >
+                  Are you ready <br /><span style="color: hsl(218, 81%, 75%)"
+                    >for an adventure?</span
+                  >
+                </h1>
+                <p class="text-lg" style="color: hsl(218, 81%, 95%)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima officia consequatur adipisci tenetur repudiandae rerum
+                  quos.
+                </p>
+              </div>
+              <div class="mb-12 lg:mb-0">
+                <div
+                  class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg"
+                  style="padding-top: 56.25%"
+                >
+                  <iframe
+                    class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+                    allowfullscreen=""
+                    data-gtm-yt-inspected-2340190_699="true"
+                    id="240632615"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+
+    <nav
+      class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Aniděti - škola animovaného filmu</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Kurzy
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#services"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page"
+                >Kurzy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Navigation -->
-    <a
-      href="#"
-      id="open-menu"
-      class="btn btn-dark btn-lg whiteonblack toggle menu-toggle"
-      ><i class="fa fa-bars"></i
-    ></a>
+    <a href="#" id="open-menu" class="">MENU<i class=""></i></a>
     <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a
-          href="#"
-          id="close-menu"
-          class="btn btn-dark btn-lg pull-right toggle"
-          ><i class="fa fa-times"></i
-        ></a>
-        <li class="sidebar-brand">
+      <ul class="">
+        <a href="#" id="close-menu" class="">CLOSE<i class=""></i></a>
+        <li class="">
           <a href="#top" id="top-menu">Úvod</a>
         </li>
         <li>
@@ -49,38 +187,100 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
-      <div class="text-vertical-center">
-        <h1 class="whiteonblack">Aniděti</h1>
-        <h3 class="whiteonblack">Škola animovaného filmu v Praze 6</h3>
+    <header id="top" class="">
+      <div class="">
+        <h1 class="">Aniděti</h1>
+        <h3 class="">Škola animovaného filmu v Praze 6</h3>
         <br />
-        <a
-          href="#about"
-          id="about-menu"
-          class="btn btn-dark btn-lg no-underline"
-          >ZJISTIT VÍCE <i class="fa fa-chevron-right"></i
+        <a href="#about" id="about-menu" class=""
+          >ZJISTIT VÍCE <i class=""></i
         ></a>
       </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row text-center">
-          <h2 class="section-header">Lektorky</h2>
+
+    <section id="about" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
+            Lektorky
+          </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                class="flex-shrink-0 rounded-lg w-350 h-70 object-cover object-center mb-4"
+                src="./img/katerina-350.webp"
+                alt="Kateřina Knappová"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Kateřina Knappová
+                </h2>
+                <h3 class="text-gray-500 mb-3">Lektorka</h3>
+                <p class="mb-4">
+                  Vystudovala DAMU. Jako režisérka a scénáristka natáčela
+                  dokumentární filmy pro Českou televizi. Pracovala jako
+                  kurátorka v Leica Gallery Prague a v Divadelním ústavu. Po
+                  narození svých dvou dětí začala pořádat a lektorovat kurzy
+                  animovaného filmu pro děti. Ráda cestuje a obklopuje se
+                  krásnými věcmi a lidmi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                class="flex-shrink-0 rounded-lg w-350 h-70 object-cover object-center mb-4"
+                src="./img/martina-350.webp"
+                alt="Martina Turková"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Martina Turková
+                </h2>
+                <h3 class="text-gray-500 mb-3">Lektorka</h3>
+                <p class="mb-4">
+                  Vystudovala latinskou a francouzskou filologii na FFUK a
+                  dramatickou výchovu na DAMU. Pracovala jako muzejní pedagožka
+                  a lektorka zážitkových workshopů v Židovském muzeu v Praze.
+                  Vedla kroužky dramatické výchovy pro mladší děti. Připravovala
+                  vzdělávací projekty pro komunitní školu Zeměkvítek. Pracovala
+                  jako metodička a lektorky zážitkových workshopů pro společnost
+                  Post Bellum. Od roku 2018 spolupracuje s Kateřinou na tvorbě
+                  animovaných filmů s dětmi. Má ráda děti ve věku 0-100 a
+                  všechny zábavné formy vzdělávání.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="">
+      <div class="">
+        <div class="">
+          <h2 class="">Lektorky</h2>
         </div>
 
-        <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="service-item">
-                  <img src="./img/katerina-350.webp" alt="Kateřina Knappová" />
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <img
+                    src="./img/katerina-350.webp"
+                    alt="Kateřina Knappová"
+                    class=""
+                  />
 
                   <h4>
                     <strong>Kateřina Knappová</strong>
                   </h4>
-                  <div class="text-center">
+                  <div class="">
                     Vystudovala DAMU. Jako režisérka a scénáristka natáčela
                     dokumentární filmy pro Českou televizi. Pracovala jako
                     kurátorka v Leica Gallery Prague a v Divadelním ústavu. Po
@@ -91,9 +291,13 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-12">
-                <div class="service-item">
-                  <img src="./img/martina-350.webp" alt="Martina Turková" />
+              <div class="">
+                <div class="">
+                  <img
+                    src="./img/martina-350.webp"
+                    alt="Martina Turková"
+                    class=""
+                  />
                   <h4>
                     <strong>Martina Turková</strong>
                   </h4>
@@ -121,25 +325,25 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="row text-center">
-          <h2 class="section-header">Nabídka kurzů</h2>
+    <section id="services" class="">
+      <div class="">
+        <div class="">
+          <h2 class="">Nabídka kurzů</h2>
         </div>
-        <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                    <i class="fa fa-film fa-stack-1x black-text"></i>
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <span class="">
+                    <i class=""></i>
+                    <i class=""></i>
                   </span>
                   <h3>
                     PRAVIDELNÉ KURZY ANIMOVANÉHO FILMU pro děti školou povinné i
                     děti v domácím vzdělávání
                   </h3>
-                  <div class="text-center">
+                  <div class="">
                     <p>
                       Náš pravidelný Kurz animovaného filmu je určen pro děti
                       jakéhokoliv věku. Dítě se seznámí se základními technikami
@@ -161,24 +365,195 @@
 
                     <p>
                       <strong>Kontakt:</strong>
-                      <a href="#contact" id="contact-menu"
-                        >zde</a
-                      >
+                      <a href="#contact" id="contact-menu">zde</a>
                     </p>
 
                     <h4 style="margin-top: 25px">ROZVRH KROUŽKŮ:</h4>
                     <h5 style="margin-top: 25px">
                       Dopolední termíny pro domškoláky:
                     </h5>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="text-center">den</th>
-                          <th class="text-center">čas</th>
+
+                    <div class="flex flex-col">
+                      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div
+                          class="py-2 inline-block min-w-full sm:px-6 lg:px-8"
+                        >
+                          <div class="overflow-hidden">
+                            <table class="min-w-full">
+                              <thead class="border-b">
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                                  >
+                                    #
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                                  >
+                                    First
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                                  >
+                                    Last
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                                  >
+                                    Handle
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="border-b">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                                  >
+                                    1
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Mark
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Otto
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    @mdo
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                                  >
+                                    2
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Jacob
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Thornton
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    @fat
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                                  >
+                                    3
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Larry
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    Wild
+                                  </td>
+                                  <td
+                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                                  >
+                                    @twitter
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <section class="overflow-hidden text-gray-700">
+                      <div
+                        class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32"
+                      >
+                        <div class="flex flex-wrap -m-1 md:-m-2">
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                              <img
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <table
+                      class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead class="">
+                        <tr class="">
+                          <th class="">den</th>
+                          <th class="">čas</th>
                           <th></th>
-                          <th colspan="2" class="text-center">
-                            Místo / lektorka
-                          </th>
+                          <th colspan="2" class="">Místo / lektorka</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -223,15 +598,15 @@
                     <h5 style="margin-top: 25px">
                       Odpolední termíny pro školáky:
                     </h5>
-                    <table class="table">
+                    <table
+                      class="w-full text-md text-left text-gray-500 dark:text-gray-400"
+                    >
                       <thead>
                         <tr>
-                          <th class="text-center">den</th>
-                          <th class="text-center">čas</th>
+                          <th class="">den</th>
+                          <th class="">čas</th>
                           <th></th>
-                          <th colspan="2" class="text-center">
-                            Místo / lektorka
-                          </th>
+                          <th colspan="2" class="">Místo / lektorka</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -295,17 +670,17 @@
           <!-- /.row -->
         </div>
 
-        <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                    <i class="fa fa-star fa-stack-1x black-text"></i>
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <span class="">
+                    <i class=""></i>
+                    <i class=""></i>
                   </span>
                   <h3>VÍKENDOVÉ DNY ANIMOVANÉHO FILMU pro děti</h3>
-                  <div class="text-center">
+                  <div class="">
                     <p>
                       Náš nepravidelný Kurz animovaného filmu je určen pro děti
                       jakéhokoliv věku.
@@ -339,9 +714,7 @@
                     <p>ATELIER Hanspaulka – PRAHA 6</p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a href="#contact" id="contact-menu""
-                        >zde</a
-                      >
+                      <a href="#contact" id="contact-menu">zde</a>
                     </p>
                     <p></p>
                   </div>
@@ -355,17 +728,17 @@
           <!-- /.row -->
         </div>
 
-        <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                    <i class="fa fa-music fa-stack-1x black-text"></i>
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <span class="">
+                    <i class=""></i>
+                    <i class=""></i>
                   </span>
                   <h3>DÍLNA ANIMOVANÉHO FILMU pro děti i dospělé</h3>
-                  <div class="text-center">
+                  <div class="">
                     <p>
                       Vytvořte si originální krátkou animaci klasickou metodou
                       stop motion! Naučíme vás, jakým způsobem připravit
@@ -388,9 +761,7 @@
                     <p><strong>Maximální počet účastníků:</strong> 6</p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a href="#contact" id="contact-menu"
-                        >zde</a
-                      >
+                      <a href="#contact" id="contact-menu">zde</a>
                     </p>
                   </div>
                 </div>
@@ -403,20 +774,20 @@
           <!-- /.row -->
         </div>
 
-        <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x grey-text"></i>
-                    <i class="fa fa-envelope fa-stack-1x black-text"></i>
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <span class="">
+                    <i class=""></i>
+                    <i class=""></i>
                   </span>
                   <h3>
                     LETNÍ TÁBORY na téma „DOBRODRUŽSTVÍ ANIMACE“ pro děti
                     mladšího věku (2. – 6. třída)
                   </h3>
-                  <div class="text-center">
+                  <div class="">
                     <p>
                       Pro zapálené animátory, ilustrátory, scénáristy, režiséry
                       a střihače pořádáme naše malé letní filmové tábory
@@ -452,9 +823,7 @@
                     </p>
                     <p>
                       <strong>Kontakt:</strong>
-                      <a href="#contact" id="contact-menu"
-                        >zde</a
-                      >
+                      <a href="#contact" id="contact-menu">zde</a>
                     </p>
                   </div>
                 </div>
@@ -471,15 +840,15 @@
     </section>
 
     <!-- Callout -->
-    <aside class="callout">
-      <div class="text-vertical-center"></div>
+    <aside class="">
+      <div class=""></div>
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row text-center">
-          <h2 class="section-header">
+    <section id="portfolio" class="">
+      <div class="">
+        <div class="">
+          <h2 class="">
             Všechny filmy najdete na našem
             <a href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A"
               >Youtube kanálu</a
@@ -487,32 +856,32 @@
           </h2>
         </div>
 
-        <div class="row text-center">
+        <div class="">
           <a
             href="https://www.youtube.com/channel/UCvnqIKv_GsqqvyM-J7gIi5A"
-            class="btn btn-lg no-underline"
+            class=""
             style="font-size: 5rem; color: #ffffff"
-            >Aniděti <i class="fa fa-youtube"></i
+            >Aniděti <i class=""></i
           ></a>
         </div>
       </div>
       <!-- /.container -->
     </section>
 
-    <section id="events" class="events">
-      <div class="container">
-        <div class="row text-center">
-          <h2 class="section-header">Jak pracujeme</h2>
+    <section id="events" class="">
+      <div class="">
+        <div class="">
+          <h2 class="">Jak pracujeme</h2>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-1.webp"
-            class="event-image"
+            class=""
             alt="Spolupráce s neziskovými oragaznizacemi"
             width="800"
             height="532"
           />
-          <p class="event-text">
+          <p class="">
             Spolupracujeme na projektech s různými neziskovými organizacemi.
             Jedním z nejlepších počinů je film „Demokracie mýma očima“, který
             vznikl pro neziskovou organizaci InBáze. Film, ve kterém 12 dětí
@@ -521,37 +890,37 @@
             umístěny na webových stránkách neziskových organizací.
           </p>
 
-          <p class="event-text">
+          <p class="">
             Zveme si hosty se zajímavými životními příběhy a natáčíme pak o nich
             animované dokumenty. Tímto způsobem jsme zpracovali například příběh
             Doris Grozdanovičové, která jako náctiletá přežila pobyt v
             koncentračním táboře Terezín. Vznikl film „Medvídku, vypravuj!“.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-2.webp"
-            class="event-image"
+            class=""
             alt="Naši hosté"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Zveme také odborníky, jejichž přednášky následně filmově zpracujeme.
             Tak tomu bylo i v případě návštěvy egyptologa Jiřího Janáka, který
             zasvětil děti do tajů egyptské mytologie. Odstartoval tak práci na
             filmu na motivy egyptského mýtu „O záři slunce a zrození lidí“.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-3.webp"
-            class="event-image"
+            class=""
             alt="Procházky Prahou"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Baví nás město, ve kterém žijeme, a tak chodíme jednou za čas na
             komentovanou procházku Prahou s pražským průvodcem Liborem Peprným.
             V úzké spolupráci s tímto neúnavným milovníkem Prahy pak
@@ -560,115 +929,115 @@
             jinak“. Filmy z této dílny jsou k vidění na FB Peprná Praha.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-4.webp"
-            class="event-image"
+            class=""
             alt="Veřejné promítání"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Hotové filmy veřejně promítáme na konci roku na slavnostní premiéře
             v kině Bio Oko.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-5.webp"
-            class="event-image"
+            class=""
             alt="Filmové festivaly"
             width="800"
             height="530"
           />
-          <p class="event-text">
+          <p class="">
             Každoročně promítáme pásmo našich filmů na netradičním filmovém
             festivalu „Krátký film v dlouhé vesnici“, který se koná ve stodole
             na kozí farmě v Merbolticích.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-6.webp"
-            class="event-image"
+            class=""
             alt="Pražský filmový kufr"
             width="800"
             height="600"
           />
 
-          <p class="event-text">
+          <p class="">
             Posíláme naše filmy na soutěžní festival „Pražský filmový kufr“,
             odkud si již tradičně odnášíme každý rok ceny za nejrůznější
             disciplíny filmové tvorby (animovaný film, dokument, scénář, kamera,
             výtvarné zpracování apod.).
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-7.webp"
-            class="event-image"
+            class=""
             alt="České vize"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Díky úspěchům na Pražském filmovém kufru jsme postoupili i do
             celonárodního kola festivalu „České vize“ a opět s velkým vděkem
             pravidelně získáváme ocenění za naše animované filmy v sekci „Malé
             vize“.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-8.webp"
-            class="event-image"
+            class=""
             alt="Optické hračky"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Zkoušíme optické hračky, které neodmyslitelně souvisí s historií
             filmu. Vyrábíme flipbooky, zoetrope, ale i cameru obscuru a
             kinetoskop ... Jó ti naši pradědové, ti se měli ...
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-9.webp"
-            class="event-image"
+            class=""
             alt="Výstavy"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Na konci roku se odměňujeme návštěvou nějaké výstavy. Moc se nám
             líbily HYBOHLEDY Pavla Macka a KABINETY Stuchlé.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-10.webp"
-            class="event-image"
+            class=""
             alt="Svět filmových triků"
             width="800"
             height="600"
           />
-          <p class="event-text">
+          <p class="">
             Chodíme do muzeí souvisejících výhradně s filmem. Zažíváme „film
             jinak“ na interaktivní výstavě filmového muzea NaFilm, která odkrývá
             podstatu filmu a jeho první podoby nebo v Muzeu Karla Zemana, který
             odkrývá svět filmových triků.
           </p>
         </div>
-        <div class="row text-center">
+        <div class="">
           <img
             src="./img/events/jak-pracujeme-11.webp"
-            class="event-image"
+            class=""
             alt="Letní tábory"
             width="800"
             height="533"
           />
-          <p class="event-text">
+          <p class="">
             Pořádáme letní tábory s názvem „Dobrodružství animace“ pro malé
             animátory, na nichž vzniká mnoho zajímavých filmů. V Českosaském
             Švýcarsku máme i příznivce z řad místních obyvatel – rybáře Vláďu.
@@ -681,16 +1050,12 @@
       <!-- /.container -->
     </section>
 
-    <section id="photos" class="photos" style="padding-top: 30px">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 text-center">
-            <h2 class="section-header">Fotografie z kurzů</h2>
-            <div
-              class="my-gallery"
-              itemscope
-              itemtype="http://schema.org/ImageGallery"
-            >
+    <section id="photos" class="">
+      <div class="">
+        <div class="">
+          <div class="">
+            <h2 class="">Fotografie z kurzů</h2>
+            <div class="" itemscope itemtype="http://schema.org/ImageGallery">
               <figure
                 itemprop="associatedMedia"
                 itemscope
@@ -1731,71 +2096,54 @@
             </div>
 
             <!-- Root element of PhotoSwipe. Must have class pswp. -->
-            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="">
               <!-- Background of PhotoSwipe. 
          It's a separate element, as animating opacity is faster than rgba(). -->
-              <div class="pswp__bg"></div>
+              <div class=""></div>
 
               <!-- Slides wrapper with overflow:hidden. -->
-              <div class="pswp__scroll-wrap">
+              <div class="">
                 <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
                 <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                <div class="pswp__container">
-                  <div class="pswp__item"></div>
-                  <div class="pswp__item"></div>
-                  <div class="pswp__item"></div>
+                <div class="">
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
                 </div>
 
                 <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                <div class="pswp__ui pswp__ui--hidden">
-                  <div class="pswp__top-bar">
+                <div class="">
+                  <div class="">
                     <!--  Controls are self-explanatory. Order can be changed. -->
 
-                    <div class="pswp__counter"></div>
+                    <div class=""></div>
 
-                    <button
-                      class="pswp__button pswp__button--close"
-                      title="Close (Esc)"
-                    ></button>
+                    <button class="" title="Close (Esc)"></button>
 
-                    <button
-                      class="pswp__button pswp__button--fs"
-                      title="Toggle fullscreen"
-                    ></button>
+                    <button class="" title="Toggle fullscreen"></button>
 
-                    <button
-                      class="pswp__button pswp__button--zoom"
-                      title="Zoom in/out"
-                    ></button>
+                    <button class="" title="Zoom in/out"></button>
 
                     <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
+                    <div class="">
+                      <div class="">
+                        <div class="">
+                          <div class=""></div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div
-                    class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
-                  >
-                    <div class="pswp__share-tooltip"></div>
+                  <div class="">
+                    <div class=""></div>
                   </div>
 
-                  <button
-                    class="pswp__button pswp__button--arrow--left"
-                    title="Previous (arrow left)"
-                  ></button>
+                  <button class="" title="Previous (arrow left)"></button>
 
-                  <button
-                    class="pswp__button pswp__button--arrow--right"
-                    title="Next (arrow right)"
-                  ></button>
+                  <button class="" title="Next (arrow right)"></button>
 
-                  <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                  <div class="">
+                    <div class=""></div>
                   </div>
                 </div>
               </div>
@@ -1807,23 +2155,21 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact" style="padding-top: 50px">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 text-center">
-            <h2 class="section-header">Kontakt</h2>
-            <div class="row">
-              <div class="portfolio-item">
+    <section id="contact" class="">
+      <div class="">
+        <div class="">
+          <div class="">
+            <h2 class="">Kontakt</h2>
+            <div class="">
+              <div class="">
                 <address>
                   <strong>Aniděti</strong>
                   <p>
                     Kateřina Knappová<br />Tylišovská 3<br />160 00, Praha 6
                   </p>
-                  <ul class="list-unstyled">
-                    <li><i class="fa fa-phone fa-fw"></i> <a href="tel:608172330"
-                        >608 172 330</a></li>
+                  <ul class="">
+                    <li><a href="tel:608172330">608 172 330</a></li>
                     <li>
-                      <i class="fa fa-envelope-o fa-fw"></i>
                       <a href="mailto:katerina.knapp@gmail.com"
                         >katerina.knapp@gmail.com</a
                       >
@@ -1831,7 +2177,7 @@
                   </ul>
                 </address>
               </div>
-              <div class="google-maps">
+              <div class="">
                 <iframe
                   width="100%"
                   height="100%"
@@ -1848,15 +2194,14 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 text-center">
-            <p class="text-muted">Copyright &copy; Aniděti 2022</p>
-          </div>
-        </div>
-      </div>
+    <footer
+      class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    >
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >© 2022
+        <a href="https://flowbite.com/" class="hover:underline">Aniděti</a>.
+        Všechna práva vyhrazena.
+      </span>
     </footer>
   </body>
 </html>

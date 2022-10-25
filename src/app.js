@@ -1,6 +1,8 @@
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 
+import "tw-elements";
+
 function scrollTo(event, selector) {
   event.preventDefault();
   document.querySelector(selector).scrollIntoView({ behavior: "smooth" });

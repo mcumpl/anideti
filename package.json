@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel serve --open",
     "build": "parcel build",
     "clean": "rm -rf dist/*",
     "uninstall": "rm -rf node_modules package-lock.json"
@@ -21,10 +21,15 @@
   },
   "homepage": "https://github.com/mcumpl/anideti#readme",
   "dependencies": {
-    "photoswipe": "^4.1.1"
+    "flowbite": "^1.5.3",
+    "photoswipe": "^4.1.1",
+    "tw-elements": "^1.0.0-alpha12"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
-    "prettier": "2.7.1"
+    "postcss": "^8.4.17",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.8"
   }
 }
